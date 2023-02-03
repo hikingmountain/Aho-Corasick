@@ -24,12 +24,6 @@ class Trie:
 
         current_state.add_emits(keyword)
 
-    def remove_overlaps(self):
-        self.allow_overlaps = False
-
-    def remain_longest(self):
-        self.remain_longest = True
-
     def construct_failure_states(self):
         """
         构建failure表
